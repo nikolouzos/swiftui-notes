@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct ContentView : View {
-    var body: some View {
-        Text("Hello World")
-    }
+
+	@State var notes = [String: Note]()
+
+	var body: some View {
+		return Text("Hello world")
+	}
 }
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
 }
 #endif
