@@ -10,6 +10,8 @@
 		0E2A2E1D22D5370D00F91D98 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A2E1C22D5370D00F91D98 /* NoteRow.swift */; };
 		0E2A2E2022D53D5100F91D98 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A2E1F22D53D5100F91D98 /* NotesView.swift */; };
 		0E5E1428230DA8B8008D5868 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5E1427230DA8B8008D5868 /* LaunchView.swift */; };
+		0E5E142B230DB954008D5868 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E5E142A230DB954008D5868 /* .swiftlint.yml */; };
+		0E5E142D230DBAC2008D5868 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E5E142C230DBAC2008D5868 /* README.md */; };
 		0E8CEEA922D27A14003B714C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CEEA822D27A14003B714C /* AppDelegate.swift */; };
 		0E8CEEAB22D27A14003B714C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CEEAA22D27A14003B714C /* SceneDelegate.swift */; };
 		0E8CEEAF22D27A15003B714C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CEEAE22D27A15003B714C /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		0E2A2E1C22D5370D00F91D98 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
 		0E2A2E1F22D53D5100F91D98 /* NotesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		0E5E1427230DA8B8008D5868 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		0E5E142A230DB954008D5868 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		0E5E142C230DBAC2008D5868 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0E8CEEA522D27A14003B714C /* swiftui-notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8CEEA822D27A14003B714C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8CEEAA22D27A14003B714C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		0E8CEE9C22D27A14003B714C = {
 			isa = PBXGroup;
 			children = (
+				0E5E142C230DBAC2008D5868 /* README.md */,
+				0E5E142A230DB954008D5868 /* .swiftlint.yml */,
 				0E8CEEC322D2A163003B714C /* GoogleService-Info.plist */,
 				0E8CEEA722D27A14003B714C /* swiftui-notes */,
 				0E8CEEA622D27A14003B714C /* Products */,
@@ -164,6 +170,7 @@
 				0E8CEEA322D27A14003B714C /* Resources */,
 				A227C0ABBD2B02C84D593DBD /* [CP] Embed Pods Frameworks */,
 				0EC1E82922D525F0003DF050 /* Crashlytics */,
+				0E5E1429230DB878008D5868 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -212,6 +219,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5E142D230DBAC2008D5868 /* README.md in Resources */,
+				0E5E142B230DB954008D5868 /* .swiftlint.yml in Resources */,
 				0E8CEEB522D27A15003B714C /* LaunchScreen.storyboard in Resources */,
 				0E8CEEC422D2A163003B714C /* GoogleService-Info.plist in Resources */,
 				0E8CEEB222D27A15003B714C /* Preview Assets.xcassets in Resources */,
@@ -222,6 +231,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E5E1429230DB878008D5868 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		0EC1E82922D525F0003DF050 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

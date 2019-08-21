@@ -11,12 +11,7 @@ import SwiftUI
 struct LaunchView : View {
     var body: some View {
         Group {
-            VStack {
-                Text("Welcome to the Notes App!")
-                    .font(.title)
-                Text("We aim to help you be your most productive self.")
-                    .font(.body)
-            }
+            TitleView()
             Spacer()
             VStack {
                 Text("Ready to login?")
@@ -32,3 +27,15 @@ struct LaunchView_Previews : PreviewProvider {
     }
 }
 #endif
+
+struct TitleView : View {
+    var body: some View {
+        return VStack {
+            Text("Welcome to the Notes App!")
+                .font(.title)
+                Text("We aim to help you be your most productive self.")
+                    .font(.body)
+            }
+            .padding()
+    }
+}
