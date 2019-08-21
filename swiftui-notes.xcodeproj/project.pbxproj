@@ -57,6 +57,7 @@
 		0E2A2E1B22D536C200F91D98 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E5E1427230DA8B8008D5868 /* LaunchView.swift */,
 				0E5E1426230DA897008D5868 /* User */,
 				0E2A2E1E22D53CE500F91D98 /* Notes */,
 			);
@@ -75,7 +76,6 @@
 		0E5E1426230DA897008D5868 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				0E5E1427230DA8B8008D5868 /* LaunchView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -461,6 +461,7 @@
 				DEVELOPMENT_TEAM = SRXH896CXH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "swiftui-notes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +483,7 @@
 				DEVELOPMENT_TEAM = SRXH896CXH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "swiftui-notes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct NoteRow : View {
+struct NoteRow: View {
 	@State var note: Note
 
     var body: some View {
@@ -25,7 +25,7 @@ struct NoteRow : View {
 }
 
 #if DEBUG
-struct NoteRow_Previews : PreviewProvider {
+struct NoteRowPreviews: PreviewProvider {
     static var previews: some View {
 		let testNote = Note(
 			id: "123",

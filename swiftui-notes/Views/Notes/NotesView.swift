@@ -9,7 +9,7 @@
 import SwiftUI
 import FirebaseFirestore
 
-struct NotesView : View {
+struct NotesView: View {
 
 	@State var notes = [Note]()
 	@State var notesListener: ListenerRegistration?
@@ -19,9 +19,6 @@ struct NotesView : View {
             HStack {
                 Text("My Notes")
                     .font(.largeTitle)
-                
-                Image("add")
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
             }
             Divider()
 			List(notes) { note in
@@ -62,7 +59,7 @@ struct NotesView : View {
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct ContentViewPreviews: PreviewProvider {
 	static var previews: some View {
 		NotesView()
 	}

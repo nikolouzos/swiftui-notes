@@ -1,5 +1,16 @@
 disabled_rules:
-
+    - unused_closure_parameter
+    - vertical_parameter_alignment
+    - trailing_whitespace
 excluded:
   - Pods
-line_length: 120
+line_length:
+    warning: 120
+    error: 140
+    ignores_comments: true
+identifier_name:
+    excluded:
+        - id
+        - url
+        - URL
+        - db
