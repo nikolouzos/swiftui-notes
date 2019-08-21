@@ -15,6 +15,9 @@ target 'swiftui-notes' do
 	pod 'SwiftyBeaver'
 	pod 'Fabric'
 	pod 'Crashlytics'
+  
+  # Code Styling
+  pod 'SwiftLint'
 
 	# Views
 
