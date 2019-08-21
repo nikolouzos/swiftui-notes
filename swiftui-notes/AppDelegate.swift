@@ -8,9 +8,13 @@
 
 import UIKit
 import Firebase
+import SwiftyBeaver
 
-// Firebase singleton
-var firebase = Firebase()
+// Firebase Variables
+let db = Firestore.firestore()
+
+// SwiftyBeaver
+let log = SwiftyBeaver.self
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Initialize Firebase
 		FirebaseApp.configure()
+
+		// Log to the console with SwiftyBeaver
+		let console = ConsoleDestination()
+		log.addDestination(console)
 		
 		return true
 	}

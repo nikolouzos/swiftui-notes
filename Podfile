@@ -6,7 +6,16 @@ target 'swiftui-notes' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for swiftui-notes
+  # Firebase
 	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+
+	# Logging & Debugging
+	pod 'SwiftyBeaver'
+	pod 'Fabric'
+	pod 'Crashlytics'
+
+	# Views
 
 end

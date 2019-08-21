@@ -3,33 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2A2E1D22D5370D00F91D98 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A2E1C22D5370D00F91D98 /* NoteRow.swift */; };
+		0E2A2E2022D53D5100F91D98 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A2E1F22D53D5100F91D98 /* NotesView.swift */; };
+		0E5E1428230DA8B8008D5868 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5E1427230DA8B8008D5868 /* LaunchView.swift */; };
 		0E8CEEA922D27A14003B714C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CEEA822D27A14003B714C /* AppDelegate.swift */; };
 		0E8CEEAB22D27A14003B714C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CEEAA22D27A14003B714C /* SceneDelegate.swift */; };
-		0E8CEEAD22D27A14003B714C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CEEAC22D27A14003B714C /* ContentView.swift */; };
 		0E8CEEAF22D27A15003B714C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CEEAE22D27A15003B714C /* Assets.xcassets */; };
 		0E8CEEB222D27A15003B714C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CEEB122D27A15003B714C /* Preview Assets.xcassets */; };
 		0E8CEEB522D27A15003B714C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CEEB322D27A15003B714C /* LaunchScreen.storyboard */; };
 		0E8CEEBF22D29DE2003B714C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CEEBD22D283B5003B714C /* Note.swift */; };
-		0E8CEEC222D29FB9003B714C /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CEEC122D29FB9003B714C /* Firebase.swift */; };
 		0E8CEEC422D2A163003B714C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CEEC322D2A163003B714C /* GoogleService-Info.plist */; };
 		77F8158383EFEBFB1962C161 /* Pods_swiftui_notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C56D1C35FF0A35D59113D8A /* Pods_swiftui_notes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2A2E1C22D5370D00F91D98 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		0E2A2E1F22D53D5100F91D98 /* NotesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		0E5E1427230DA8B8008D5868 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		0E8CEEA522D27A14003B714C /* swiftui-notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8CEEA822D27A14003B714C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8CEEAA22D27A14003B714C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E8CEEAC22D27A14003B714C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E8CEEAE22D27A15003B714C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E8CEEB122D27A15003B714C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E8CEEB422D27A15003B714C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E8CEEB622D27A15003B714C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E8CEEBD22D283B5003B714C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		0E8CEEC122D29FB9003B714C /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		0E8CEEC322D2A163003B714C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6C56D1C35FF0A35D59113D8A /* Pods_swiftui_notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA0DFE4192D8708AF9BED22 /* Pods-swiftui-notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-notes.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-notes/Pods-swiftui-notes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +50,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E2A2E1B22D536C200F91D98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E5E1426230DA897008D5868 /* User */,
+				0E2A2E1E22D53CE500F91D98 /* Notes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E2A2E1E22D53CE500F91D98 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				0E2A2E1F22D53D5100F91D98 /* NotesView.swift */,
+				0E2A2E1C22D5370D00F91D98 /* NoteRow.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		0E5E1426230DA897008D5868 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0E5E1427230DA8B8008D5868 /* LaunchView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		0E8CEE9C22D27A14003B714C = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +98,10 @@
 		0E8CEEA722D27A14003B714C /* swiftui-notes */ = {
 			isa = PBXGroup;
 			children = (
-				0E8CEEBC22D283A2003B714C /* Models */,
 				0E8CEEA822D27A14003B714C /* AppDelegate.swift */,
 				0E8CEEAA22D27A14003B714C /* SceneDelegate.swift */,
-				0E8CEEAC22D27A14003B714C /* ContentView.swift */,
+				0E8CEEBC22D283A2003B714C /* Models */,
+				0E2A2E1B22D536C200F91D98 /* Views */,
 				0E8CEEAE22D27A15003B714C /* Assets.xcassets */,
 				0E8CEEB322D27A15003B714C /* LaunchScreen.storyboard */,
 				0E8CEEB622D27A15003B714C /* Info.plist */,
@@ -93,7 +121,6 @@
 		0E8CEEBC22D283A2003B714C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0E8CEEC122D29FB9003B714C /* Firebase.swift */,
 				0E8CEEC022D29EA1003B714C /* Data Models */,
 			);
 			path = Models;
@@ -136,6 +163,7 @@
 				0E8CEEA222D27A14003B714C /* Frameworks */,
 				0E8CEEA322D27A14003B714C /* Resources */,
 				A227C0ABBD2B02C84D593DBD /* [CP] Embed Pods Frameworks */,
+				0EC1E82922D525F0003DF050 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -154,7 +182,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = "Nikolaos Rafail Nikolouzos";
+				ORGANIZATIONNAME = "NIKOLOUZOS LTD";
 				TargetAttributes = {
 					0E8CEEA422D27A14003B714C = {
 						CreatedOnToolsVersion = 11.0;
@@ -162,7 +190,7 @@
 				};
 			};
 			buildConfigurationList = 0E8CEEA022D27A14003B714C /* Build configuration list for PBXProject "swiftui-notes" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -194,6 +222,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0EC1E82922D525F0003DF050 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
 		31891DA1549538A2E494F823 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,10 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E8CEEC222D29FB9003B714C /* Firebase.swift in Sources */,
+				0E2A2E1D22D5370D00F91D98 /* NoteRow.swift in Sources */,
+				0E5E1428230DA8B8008D5868 /* LaunchView.swift in Sources */,
 				0E8CEEA922D27A14003B714C /* AppDelegate.swift in Sources */,
+				0E2A2E2022D53D5100F91D98 /* NotesView.swift in Sources */,
 				0E8CEEAB22D27A14003B714C /* SceneDelegate.swift in Sources */,
-				0E8CEEAD22D27A14003B714C /* ContentView.swift in Sources */,
 				0E8CEEBF22D29DE2003B714C /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +343,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -393,7 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.nikolouzos.swiftui-notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.nikolouzos.swiftui-notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
