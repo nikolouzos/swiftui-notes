@@ -6,24 +6,33 @@ _A fun note-taking application built with SwiftUI and Firebase Firestore_
 [![Build Status](https://app.bitrise.io/app/b7628e99a194aec0/status.svg?token=e3x-ClVKJ1Q6ulnsjLG70A)](https://app.bitrise.io/app/b7628e99a194aec0)
 
 ## Contents
+* [Summary](#-summary)
+* [How to build and run this app](#-how-to-build-and-run-this-app)
+* [Tools used](#-tools-used)
+* [CocoaPods dependencies](#-cocoapods-dependencies)
 
-* [How to build and run this app](#section1)
-* [Tools used](#section2)
-* [CocoaPods dependencies](#section3)
+## Summary
+This is a simple note-taking application that supports user accounts. Each user has their personal notes. They can add or edit any of their notes. Notes can be archived when their purpose has been fulfilled. You can see your archived notes and re-activate them. Notes can be edited by multiple users. You can invite a user to edit a note by entering their phone number. They will receive a notification with the option to accept or reject the invite.
 
-## <a name="section1"></a> How to build and run this app
+### The notes
+The notes can contain text or checklists. You can combine those two formats
 
-To run this app you will need MacOS 10.14+ (Mojave) and Xcode 11. To use the live preview feature of SwiftUI, you will need MacOS 10.15+ (Catalina). Also, I am currently not uploading the `GoogleService-Info.plist` file, which is needed to configure the Firebase SDK, but you can download a demo file from [here ]()(Link not working yet).
+## The challenge
+Apart from this being a SwiftUI learning experience, I want to challenge myself to enforce 
+
+## How to build and run this app
+
+To run this app you will need MacOS 10.14+ (Mojave) and Xcode 11. To use the live preview feature of SwiftUI, you will need MacOS 10.15+ (Catalina). ~~Also, I am currently not uploading the `GoogleService-Info.plist` file, which is needed to configure the Firebase SDK, but you can download a demo file from [here ]()(Link not working yet).~~ 
+
+Edit: I elected to add `GoogleService-Info.plist` to the project in the end. The file is not really protected, so there's no reason to not include it. The correct way to protect your project is to write correct rules and test them thoroughly.
 
 ### Steps to run the application
 
 1. Clone the project.
-2. Download the demo `GoogleService-Info.plist` file provided.
-3. Drop the file in the the project directory.
-4. Open a `Terminal` and navigate to the project directory.
-5. Run `pod install` from the `Terminal`. (If you haven't installed Coocoapods you can get it from [here](https://cocoapods.org/)).
-6. Pray Xcode doesn't explode.
-7. Run the application.
+2. Open a `Terminal` and navigate to the project directory.
+3. Run `pod install` from the `Terminal`. (If you haven't installed Coocoapods you can get it from [here](https://cocoapods.org/)).
+4. Pray Xcode doesn't explode.
+5. Run the application.
 
 ## <a name="section2"></a> Tools used
 
