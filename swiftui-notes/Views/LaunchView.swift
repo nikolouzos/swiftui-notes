@@ -179,7 +179,7 @@ private struct LoginView: View {
                     // Update the state
                     self.loading = false
                     
-                    // Navigate to the NotesView
+                    // TODO: Navigate to the NotesView
                 }
             })
         }
