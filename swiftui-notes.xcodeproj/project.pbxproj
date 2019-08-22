@@ -20,6 +20,7 @@
 		0E8CEEBF22D29DE2003B714C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CEEBD22D283B5003B714C /* Note.swift */; };
 		0E8CEEC422D2A163003B714C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CEEC322D2A163003B714C /* GoogleService-Info.plist */; };
 		0EA105FE230F14B400C98020 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA105FD230F14B400C98020 /* User.swift */; };
+		0EA10600230F219D00C98020 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0EA105FF230F219D00C98020 /* .gitignore */; };
 		77F8158383EFEBFB1962C161 /* Pods_swiftui_notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C56D1C35FF0A35D59113D8A /* Pods_swiftui_notes.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		0E8CEEBD22D283B5003B714C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		0E8CEEC322D2A163003B714C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EA105FD230F14B400C98020 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0EA105FF230F219D00C98020 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6C56D1C35FF0A35D59113D8A /* Pods_swiftui_notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA0DFE4192D8708AF9BED22 /* Pods-swiftui-notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-notes.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-notes/Pods-swiftui-notes.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDCA4B5C6B5B07F82AC2B12 /* Pods-swiftui-notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-notes.release.xcconfig"; path = "Target Support Files/Pods-swiftui-notes/Pods-swiftui-notes.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		0E8CEE9C22D27A14003B714C = {
 			isa = PBXGroup;
 			children = (
+				0EA105FF230F219D00C98020 /* .gitignore */,
 				0E5E142C230DBAC2008D5868 /* README.md */,
 				0E5E142A230DB954008D5868 /* .swiftlint.yml */,
 				0E8CEEC322D2A163003B714C /* GoogleService-Info.plist */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E5E142D230DBAC2008D5868 /* README.md in Resources */,
+				0EA10600230F219D00C98020 /* .gitignore in Resources */,
 				0E5E142B230DB954008D5868 /* .swiftlint.yml in Resources */,
 				0E8CEEB522D27A15003B714C /* LaunchScreen.storyboard in Resources */,
 				0E8CEEC422D2A163003B714C /* GoogleService-Info.plist in Resources */,

@@ -80,6 +80,3 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-
-# Firebase initialization file
-GoogleService-Info.plist
