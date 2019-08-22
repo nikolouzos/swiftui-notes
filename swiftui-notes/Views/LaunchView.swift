@@ -15,7 +15,7 @@ struct LaunchView: View {
     @State var code = ""
     
     var body: some View {
-        Group {
+        VStack {
             TitleView()
             Spacer()
             LoginView(phone: $phone, code: $code)
@@ -33,21 +33,20 @@ struct LaunchViewPreviews: PreviewProvider {
 
 private struct TitleView: View {
     var body: some View {
-        return VStack {
+        return VStack(spacing: -4) {
             HStack {
-                Text("Welcome to the ")
+                Text("Welcome to the")
                     .font(.title)
                 Text("Notes App")
                     .font(.title)
-                    .color(.orange)
+                    .foregroundColor(.orange)
                     .bold()
                 Text("!")
                     .font(.title)
             }
             Text("We aim to help you be your most productive self!")
-                .font(.subheadline)
+                .font(.body)
             }
-            .padding()
     }
 }
 
@@ -61,29 +60,27 @@ private struct LoginView: View {
     
     var body: some View {
         return VStack {
-            Text("Let's get started!")
-                .color(.white)
+            Text(verbatim: "Let's get started!")
+                .foregroundColor(.white)
                 .font(.headline)
                 .padding(.bottom)
-            
+
             HStack {
-                Text("PHONE")
+                Text(verbatim: "PHONE")
                     .font(.subheadline)
-                    .color(.white)
+                    .foregroundColor(.white)
                     .padding(.bottom, 0)
                     .padding(.leading, 4)
                 Spacer()
             }
-            
-            TextField($phone, placeholder:
-                Text("Enter your phone")
-                    .color(.orange)
-                )
+
+            TextField("Enter your phone", text: $phone)
                 .lineLimit(1)
                 .textContentType(.telephoneNumber)
                 .padding(.all)
-                .background(Color.white, cornerRadius: 5)
-            
+                .background(Color.white)
+                .cornerRadius(8)
+
             Button(
                 action: { self.verifyPhone() },
                 label: {
@@ -91,16 +88,16 @@ private struct LoginView: View {
                     Text("Login")
                         .font(.body)
                 })
-                .padding(.horizontal, 28)
+                .padding(.horizontal, 32)
                 .padding(.vertical, 8)
-                .background(Color.white, cornerRadius: 5)
+                .background(Color.white)
+                .cornerRadius(3)
             }
-            .padding(.all)
+        .padding(.all)
             .foregroundColor(.orange)
             .background(
-                RoundedRectangle(cornerRadius: 20,
-                style: .circular)
-                    .foregroundColor(.orange)
+                RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(.orange)
                 .edgesIgnoringSafeArea(.bottom)
             )
     }
