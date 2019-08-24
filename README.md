@@ -6,11 +6,11 @@ _A fun note-taking application built with SwiftUI and Firebase Firestore_
 [![Build Status](https://app.bitrise.io/app/b7628e99a194aec0/status.svg?token=e3x-ClVKJ1Q6ulnsjLG70A)](https://app.bitrise.io/app/b7628e99a194aec0)
 
 ## Contents
-* [Summary](#-summary)
-* [The challenge](#-the-challenge)
-* [How to build and run this app](#-how-to-build-and-run-this-app)
-* [Tools used](#-tools-used)
-* [CocoaPods dependencies](#-cocoapods-dependencies)
+* [Summary](#summary)
+* [The challenge](#the-challenge)
+* [How to build and run this app](#how-to-build-and-run-this-app)
+* [Tools used](#tools-used)
+* [CocoaPods dependencies](#cocoapods-dependencies)
 
 ## Summary
 This is a simple note-taking application that supports user accounts. Each user has their personal notes. They can add or edit any of their notes. Notes can be archived when their purpose has been fulfilled. You can see your archived notes and re-activate them. Notes can be edited by multiple users. You can invite a user to edit a note by entering their phone number. They will receive a notification with the option to accept or reject the invite.
