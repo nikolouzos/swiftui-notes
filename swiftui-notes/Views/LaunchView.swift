@@ -19,6 +19,7 @@ struct LaunchView: View {
     var body: some View {
         VStack {
             TitleView()
+                .foregroundColor(.white)
             Spacer()
             if loading {
                 // Show a loader
@@ -27,6 +28,14 @@ struct LaunchView: View {
                 LoginView(loading: $loading).environmentObject(router)
             }
         }
+        .background(
+            Image("launch-bg")
+                .resizable()
+                .renderingMode(.original)
+                .opacity(0.75)
+                .edgesIgnoringSafeArea(.all)
+                .background(Color.black.edgesIgnoringSafeArea(.all))
+        )
     }
 }
 
