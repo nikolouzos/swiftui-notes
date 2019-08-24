@@ -10,6 +10,8 @@ import SwiftUI
 import FirebaseFirestore
 
 struct NotesView: View {
+    
+    @EnvironmentObject var router: AppRouter
 
 	@State var notes = [Note]()
 	@State var notesListener: ListenerRegistration?
@@ -61,7 +63,7 @@ struct NotesView: View {
 #if DEBUG
 struct ContentViewPreviews: PreviewProvider {
 	static var previews: some View {
-		NotesView()
+        NotesView().environmentObject(AppRouter())
 	}
 }
 #endif

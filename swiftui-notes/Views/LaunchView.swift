@@ -11,6 +11,8 @@ import FirebaseAuth
 
 struct LaunchView: View {
     
+    @EnvironmentObject var router: AppRouter
+    
     // To see what the loading state does, check the LoginView
     @State var loading = false
     
@@ -22,7 +24,7 @@ struct LaunchView: View {
                 // Show a loader
             } else {
                 // Show the LoginView
-                LoginView(loading: $loading)
+                LoginView(loading: $loading).environmentObject(router)
             }
         }
     }
@@ -31,7 +33,7 @@ struct LaunchView: View {
 #if DEBUG
 struct LaunchViewPreviews: PreviewProvider {
     static var previews: some View {
-        LaunchView(loading: false)
+        LaunchView(loading: false).environmentObject(AppRouter())
     }
 }
 #endif
@@ -58,14 +60,15 @@ private struct TitleView: View {
 // The bottom view that manages the login
 private struct LoginView: View {
     
+    @EnvironmentObject var router: AppRouter
+    
     @State var verificationId: String?
     @State var phone: String = ""
     @State var code: String = ""
     
-    // These are the states this View can be in
-    
     // The loading state means we are waiting for something to happen
     @Binding var loading: Bool
+    
     // The authenticating state means we are waiting for an authentication code to be entered
     @State var authenticating: Bool = false
     
@@ -94,7 +97,8 @@ private struct LoginView: View {
                 authenticating ? "Enter the code you received" : "Enter your phone number",
                 text: $phone)
                 .lineLimit(1)
-                .textContentType(.telephoneNumber)
+                .keyboardType(authenticating ? .numberPad : .phonePad)
+                .textContentType(authenticating ? .oneTimeCode : .telephoneNumber)
                 .padding(.all)
                 .background(Color.white)
                 .cornerRadius(5)
@@ -126,7 +130,6 @@ private struct LoginView: View {
     func verifyPhone() {
         // Validate the user's phone using regex
         if phone.range(of: #"^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"#, options: .regularExpression) != nil {
-            log.info("The user's phone is \(self.phone)")
             
             // Show the loader
             loading = true
@@ -179,7 +182,8 @@ private struct LoginView: View {
                     // Update the state
                     self.loading = false
                     
-                    // TODO: Navigate to the NotesView
+                    // Navigate to the NotesView
+                    self.router.currentPage = "notes"
                 }
             })
         }

@@ -9,16 +9,15 @@ target 'swiftui-notes' do
   # Firebase
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
-    pod 'Firebase/Auth'
+  pod 'Firebase/Auth'
 
 	# Logging & Debugging
 	pod 'SwiftyBeaver'
 	pod 'Fabric'
 	pod 'Crashlytics'
   
-    # Code Styling
-    pod 'SwiftLint'
+  # Code Styling
+  pod 'SwiftLint'
 
-    # Views
-
+  # Views
 end
