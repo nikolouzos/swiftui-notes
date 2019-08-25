@@ -17,22 +17,24 @@ struct NotesView: View {
 	@State var notesListener: ListenerRegistration?
 
 	var body: some View {
-		return VStack {
-            HStack {
-                Text("My Notes")
-                    .font(.largeTitle)
+        return NavigationView {
+            ScrollView {
+                HStack {
+                    // TODO: Split the notes in 2 lists and create the cell (NoteRowView) designs
+                    HalfColumnNoteList()
+                    HalfColumnNoteList()
+                }
             }
-            Divider()
-			List(notes) { note in
-				NoteRow(note: note)
-			}
-		}
-			.onAppear {
-				self.observeNotes()
-		}
-			.onDisappear {
-				self.stopObservingNotes()
-		}
+            .padding()
+            .edgesIgnoringSafeArea(.bottom)
+        }
+        .onAppear {
+            self.observeNotes()
+        }
+        .onDisappear {
+            self.stopObservingNotes()
+        }
+        .navigationBarTitle("My Notes")
 	}
 
 	/// Starts observing the user's notes
@@ -58,6 +60,13 @@ struct NotesView: View {
 
 	/// Stops observing the user's notes
 	func stopObservingNotes() { notesListener?.remove() }
+}
+
+// A list of notes that takes up half the screen's width
+struct HalfColumnNoteList: View {
+    var body: some View {
+        return Text("Hello world!")
+    }
 }
 
 #if DEBUG
