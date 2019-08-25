@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E2A2E1D22D5370D00F91D98 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A2E1C22D5370D00F91D98 /* NoteRow.swift */; };
 		0E2A2E2022D53D5100F91D98 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A2E1F22D53D5100F91D98 /* NotesView.swift */; };
 		0E5E1428230DA8B8008D5868 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5E1427230DA8B8008D5868 /* LaunchView.swift */; };
 		0E5E142B230DB954008D5868 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E5E142A230DB954008D5868 /* .swiftlint.yml */; };
@@ -21,13 +20,14 @@
 		0E8CEEC422D2A163003B714C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CEEC322D2A163003B714C /* GoogleService-Info.plist */; };
 		0EA105FE230F14B400C98020 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA105FD230F14B400C98020 /* User.swift */; };
 		0EA10600230F219D00C98020 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0EA105FF230F219D00C98020 /* .gitignore */; };
+		0ECC4EA92311A34300EC4FE8 /* NoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC4EA82311A34300EC4FE8 /* NoteContent.swift */; };
 		0EE0D0232311530D00028562 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D0222311530D00028562 /* AppRouter.swift */; };
 		0EE0D0252311539700028562 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D0242311539700028562 /* RouterView.swift */; };
+		0EE67DE42312F09500C1D064 /* NoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE67DE32312F09500C1D064 /* NoteRowView.swift */; };
 		77F8158383EFEBFB1962C161 /* Pods_swiftui_notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C56D1C35FF0A35D59113D8A /* Pods_swiftui_notes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E2A2E1C22D5370D00F91D98 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
 		0E2A2E1F22D53D5100F91D98 /* NotesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		0E5E1427230DA8B8008D5868 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		0E5E142A230DB954008D5868 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -43,8 +43,10 @@
 		0E8CEEC322D2A163003B714C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EA105FD230F14B400C98020 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0EA105FF230F219D00C98020 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0ECC4EA82311A34300EC4FE8 /* NoteContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteContent.swift; sourceTree = "<group>"; };
 		0EE0D0222311530D00028562 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		0EE0D0242311539700028562 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		0EE67DE32312F09500C1D064 /* NoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRowView.swift; sourceTree = "<group>"; };
 		6C56D1C35FF0A35D59113D8A /* Pods_swiftui_notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA0DFE4192D8708AF9BED22 /* Pods-swiftui-notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-notes.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-notes/Pods-swiftui-notes.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDCA4B5C6B5B07F82AC2B12 /* Pods-swiftui-notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-notes.release.xcconfig"; path = "Target Support Files/Pods-swiftui-notes/Pods-swiftui-notes.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				0E2A2E1F22D53D5100F91D98 /* NotesView.swift */,
-				0E2A2E1C22D5370D00F91D98 /* NoteRow.swift */,
+				0EE67DE32312F09500C1D064 /* NoteRowView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -138,10 +140,27 @@
 		0E8CEEC022D29EA1003B714C /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				0E8CEEBD22D283B5003B714C /* Note.swift */,
+				0ECC4EA62311A2AC00EC4FE8 /* Notes */,
 				0EA105FD230F14B400C98020 /* User.swift */,
 			);
 			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		0ECC4EA62311A2AC00EC4FE8 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				0E8CEEBD22D283B5003B714C /* Note.swift */,
+				0ECC4EA72311A2B700EC4FE8 /* Content */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		0ECC4EA72311A2B700EC4FE8 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC4EA82311A34300EC4FE8 /* NoteContent.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 		51EB711857E9706B553C9AAA /* Pods */ = {
@@ -319,13 +338,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2A2E1D22D5370D00F91D98 /* NoteRow.swift in Sources */,
 				0E5E1428230DA8B8008D5868 /* LaunchView.swift in Sources */,
 				0E8CEEA922D27A14003B714C /* AppDelegate.swift in Sources */,
 				0EE0D0252311539700028562 /* RouterView.swift in Sources */,
 				0E2A2E2022D53D5100F91D98 /* NotesView.swift in Sources */,
+				0ECC4EA92311A34300EC4FE8 /* NoteContent.swift in Sources */,
 				0E8CEEAB22D27A14003B714C /* SceneDelegate.swift in Sources */,
 				0E8CEEBF22D29DE2003B714C /* Note.swift in Sources */,
+				0EE67DE42312F09500C1D064 /* NoteRowView.swift in Sources */,
 				0EA105FE230F14B400C98020 /* User.swift in Sources */,
 				0EE0D0232311530D00028562 /* AppRouter.swift in Sources */,
 			);
